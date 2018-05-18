@@ -21,6 +21,9 @@ const EmployeeProfile = ({employees, employeeId, hideEmployeeProfile, shifts, do
 					<div className="boxProfile id">
 						{shift.id}
 					</div>
+					<div className="boxProfile name">
+						{shift.name}
+					</div>
 					<div className="boxProfile startShift">
 						{shift.start_shift.toString().replace(/t/i, " ").replace(/.000Z/i, "").slice(0,16)}
 					</div>
@@ -81,7 +84,8 @@ const EmployeeProfile = ({employees, employeeId, hideEmployeeProfile, shifts, do
 			<div className="containerProfile">
         <div className="wrapperProfile">
           <div className="boxProfile id">ID</div>
-					<div className="boxProfile startShift">Start Shift</div>
+          <div className="boxProfile name">Name</div>
+		  <div className="boxProfile startShift">Start Shift</div>
           <div className="boxProfile endShift">End Shift</div>
           <div className="boxProfile notes">Notes</div>
           <div className="boxProfile delete">Delete</div>
