@@ -136,6 +136,7 @@ class EmployeeContainer extends Component {
   }
   deleteEmployee = async (e) => {
     const id = e.currentTarget.parentNode.parentNode.id;
+    console.log(id, " this is the id of the employee we're trying to delete");
     const employees = await fetch ('https://ems-api.herokuapp.com/employees/' + id, {
       credentials: 'include',
       method: 'DELETE'
@@ -170,6 +171,7 @@ class EmployeeContainer extends Component {
   }
   deleteShift = async (e) => {
     const id = e.currentTarget.parentNode.parentNode.id;
+    console.log(id, " this is the id of the shift we're trying to delete");
     const shifts = await fetch ('https://ems-api.herokuapp.com/shifts/' + id, {
       credentials: 'include',
       method: 'DELETE'
