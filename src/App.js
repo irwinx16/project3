@@ -79,7 +79,7 @@ class App extends Component {
   // LOG IN
 
   doLogin = async (username, password) => {
-    const loginJson = await fetch('https://ems-api.herokuapp.com/login', {
+    const loginJson = await fetch('https://ems-api.herokuapp.com/employers/login', {
       method: 'POST',
       credentials: 'include', // you MUST include in ALL ajax requests
       body: JSON.stringify({
