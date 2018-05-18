@@ -16,10 +16,6 @@ Employer should be able to register and login.
 - Be able to add shift (breakfast, lunch, dinner, brunch, etc.).
 - Be able to assign shifts to employees. 
 
-## Wireframe
-
-![Wireframe](Wireframe/WireFrame.jpeg)
-
 ## Data Tables
 
 Employee Table
@@ -47,3 +43,15 @@ Shift Table
 - End
 - Notes
 - Employee_ID
+
+## Wireframe
+
+![Wireframe](readme_images/wireframe/wireframe.jpeg)
+
+## Screenshots
+
+![Login/Register Page](readme_images/screenshots/login_page.png)
+
+![All Employees Page](readme_images/screenshots/all_employees.png)
+
+![Employee Profile Page](readme_images/screenshots/employee_profile.png)
