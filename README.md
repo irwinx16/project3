@@ -1,5 +1,7 @@
 # EMS
-Employee Management Software: Manage your employees with our API!
+Employee Management Software: Manage your employees!
+
+Powered by our API built in Ruby. For more information, consult the API documentation here: https://github.com/irwinx16/project3_api
 
 ## User Story
 
@@ -17,10 +19,6 @@ Employer should be able to register and login.
 ## Wireframe
 
 ![Wireframe](Wireframe/WireFrame.jpeg)
-
-## How to Use the API
-
-For more information, consult the documentation here: https://github.com/irwinx16/project3_api
 
 ## Data Tables
 
