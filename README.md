@@ -50,8 +50,11 @@ Shift Table
 
 ## Screenshots
 
+### Login/Register Page
 ![Login/Register Page](readme_images/screenshots/login_page.png)
 
-![All Employees Page](readme_images/screenshots/all_employees.png)
+### All Employees Show Page
+![All Employees Show Page](readme_images/screenshots/all_employees.png)
 
+### Employee Profile Page
 ![Employee Profile Page](readme_images/screenshots/employee_profile.png)
