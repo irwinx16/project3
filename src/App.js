@@ -32,28 +32,28 @@ class App extends Component {
   // ALL GET METHODS //
 
   getEmployees = async () => {
-    const employeesJson = await fetch('http://localhost:9292/employees', {
+    const employeesJson = await fetch('https://ems-api.herokuapp.com/employees', {
       credentials: 'include'
     });
     const employees = await employeesJson.json();
     return employees;
   }
   getWhosWorking = async () => {
-    const whosWorkingJson = await fetch('http://localhost:9292/employees/whosworking', {
+    const whosWorkingJson = await fetch('https://ems-api.herokuapp.com/employees/whosworking', {
       credentials: 'include'
     });
     const whosWorking = await whosWorkingJson.json();
     return whosWorking;
   }
   getShifts = async () => {
-    const shiftsJson = await fetch('http://localhost:9292/shifts', {
+    const shiftsJson = await fetch('https://ems-api.herokuapp.com/shifts', {
       credentials: 'include'
     });
     const shifts = await shiftsJson.json();
     return shifts;
   }
   getEmployers = async () => {
-    const employersJson = await fetch('http://localhost:9292/employers', {
+    const employersJson = await fetch('https://ems-api.herokuapp.com/employers', {
       credentials: 'include'
     });
     const employers = await employersJson.json();
@@ -63,7 +63,7 @@ class App extends Component {
   // LOGOUT
 
   doLogout = async () => {
-    const logoutJson = await fetch('http://localhost:9292/employers/logout', {
+    const logoutJson = await fetch('https://ems-api.herokuapp.com/employers/logout', {
       credentials: 'include' // you MUST include in ALL ajax requests
     })
     const loggedOut = await logoutJson.json();
@@ -79,7 +79,7 @@ class App extends Component {
   // LOG IN
 
   doLogin = async (username, password) => {
-    const loginJson = await fetch('http://localhost:9292/employers/login', {
+    const loginJson = await fetch('https://ems-api.herokuapp.com/login', {
       method: 'POST',
       credentials: 'include', // you MUST include in ALL ajax requests
       body: JSON.stringify({
@@ -139,7 +139,7 @@ class App extends Component {
   // REGISTER
 
   doRegister = async (username, password) => {
-    const registerJson = await fetch('http://localhost:9292/employers/register', {
+    const registerJson = await fetch('https://ems-api.herokuapp.com/employers/register', {
       method: 'POST',
       credentials: 'include', // you MUST include in ALL ajax requests
       body: JSON.stringify({
