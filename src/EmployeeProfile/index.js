@@ -31,10 +31,10 @@ const EmployeeProfile = ({employees, employeeId, hideEmployeeProfile, shifts, do
 						{shift.notes}
 					</div>
 					<div className="boxProfile delete">
-       			<Button onClick={deleteShift} bsSize="small" bsStyle="danger">Delete</Button>
-        	</div>
-      	</div>
-      </div>
+       					<Button onClick={deleteShift} bsSize="small" bsStyle="danger">Delete</Button>
+        			</div>
+      			</div>
+      		</div>
      )
 	})
 
