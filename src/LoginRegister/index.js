@@ -44,7 +44,7 @@ class LoginRegister extends Component {
 			<div>
 				<Jumbotron>
   				<h1>Welcome to EMS!</h1>
-  				<h3>Employment Management Software</h3>
+  				<h3>Employee Management Software</h3>
 					<h4> {this.props.logOutMessage} </h4>
 					{this.props.logInErrorMessage.toString() !== '' ? <p className="login-error">{this.props.logInErrorMessage.toString()}</p> : null}
 
