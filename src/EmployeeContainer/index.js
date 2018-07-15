@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import EmployeeList from '../EmployeeList';
-import WhosWorkingList from '../WhosWorkingList';
-import HireEmployeeModal from '../HireEmployeeModal';
-import EmployeeProfile from '../EmployeeProfile';
-import EditModal from '../EditModal';
-import CreateShiftModal from '../CreateShiftModal';
+import EmployeeList from './EmployeeList';
+import WhosWorkingList from './WhosWorkingList';
+import HireEmployeeModal from './HireEmployeeModal';
+import EmployeeProfile from './EmployeeProfile';
+import EditModal from './EditModal';
+import CreateShiftModal from './CreateShiftModal';
 import './style.css';
 
 class EmployeeContainer extends Component {
