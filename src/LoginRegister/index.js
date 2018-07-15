@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron } from 'react-bootstrap';
-import { Button } from 'react-bootstrap';
-import { Form } from 'react-bootstrap';
-import { FormGroup } from 'react-bootstrap';
-import { FormControl } from 'react-bootstrap';
-import { Col } from 'react-bootstrap';
-import { ControlLabel } from 'react-bootstrap';
+import { Jumbotron, Button, Form, FormGroup, FormControl, Col, ControlLabel } from 'react-bootstrap';
 import './style.css';
 
 class LoginRegister extends Component {
@@ -43,8 +37,8 @@ class LoginRegister extends Component {
 		return (
 			<div>
 				<Jumbotron>
-  				<h1>Welcome to EMS!</h1>
-  				<h3>Employee Management Software</h3>
+	  				<h1>Welcome to EMS!</h1>
+	  				<h3>Employee Management Software</h3>
 					<h4> {this.props.logOutMessage} </h4>
 					{this.props.logInErrorMessage.toString() !== '' ? <p className="login-error">{this.props.logInErrorMessage.toString()}</p> : null}
 
@@ -52,11 +46,11 @@ class LoginRegister extends Component {
 					<Form horizontal onSubmit={this.handleSubmit}>
 						<FormGroup controlId="formHorizontal">
 							<Col componentClass={ControlLabel} sm={12}>
-      					Username
-   						</Col>
-   						<Col sm={12}>
-      					<FormControl type="text" name="username" placeholder="Username" value={this.state.username} onChange={this.handleInput} />
-    					</Col>
+      							Username
+   								</Col>
+   							<Col sm={12}>
+      							<FormControl type="text" name="username" placeholder="Username" value={this.state.username} onChange={this.handleInput} />
+    						</Col>
 						</FormGroup>
 
 						<FormGroup controlId="formHorizontalPassword">
@@ -68,10 +62,10 @@ class LoginRegister extends Component {
 							</Col>
 						</FormGroup>
 						<FormGroup>
-    					<Col smOffset={0} sm={12}>
-      				<Button bsStyle="primary" type="submit"> {this.state.registering ? "Register" : "Log In"}</Button>
-    					</Col>
-  					</FormGroup>
+	    					<Col smOffset={0} sm={12}>
+	      						<Button bsStyle="primary" type="submit"> {this.state.registering ? "Register" : "Log In"}</Button>
+	    					</Col>
+  						</FormGroup>
 					</Form>
 				</Jumbotron>
 			</div>

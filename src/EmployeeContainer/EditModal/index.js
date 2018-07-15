@@ -14,29 +14,14 @@ class EditModal extends Component {
   componentDidMount() {
     this.findCurrentEmployee()
   }
-  updateName = (e) => {
-    const name = e.currentTarget.value;
-    this.setState({
-      name: name
-    });
-  }
-  updatePosition = (e) => {
-    const position = e.currentTarget.value;
-    this.setState({
-      position: position
-    });
-  }
-  updateNotes = (e) => {
-    const notes = e.currentTarget.value;
-    this.setState({
-      notes: notes
-    });
-  }
-  updateAvailability = (e) => {
-    const availability = e.currentTarget.value;
-    this.setState({
-      availability: availability
-    });
+
+  handleInput = (e) => {
+    e.preventDefault();
+    const key = e.currentTarget.name;
+    const value = e.currentTarget.value;
+    const obj = {};
+    obj[key] = value;
+    this.setState(obj);
   }
 
   handleSubmit = (e) => {
@@ -60,10 +45,10 @@ class EditModal extends Component {
         <button onClick={this.props.closeEditModal}>Exit</button>
         <form onSubmit={this.handleSubmit}>
             Edit Employee: <br/>
-          <input type="text" name="name" value={this.state.name} placeholder="Employee Name" onChange={this.updateName}/> <br/>
-          <input type="text" name="position" value={this.state.position} placeholder="Employee Position" onChange={this.updatePosition}/> <br/>
-          <input type="text" name="notes" value={this.state.notes} placeholder="Employee Notes" onChange={this.updateNotes} /> <br/>
-          <input type="text" name="availability" value={this.state.availability} placeholder="Employee Availability" onChange={this.updateAvailability} /> <br/>
+          <input type="text" name="name" value={this.state.name} placeholder="Employee Name" onChange={this.handleInput} /> <br/>
+          <input type="text" name="position" value={this.state.position} placeholder="Employee Position" onChange={this.handleInput} /> <br/>
+          <input type="text" name="notes" value={this.state.notes} placeholder="Employee Notes" onChange={this.handleInput} /> <br/>
+          <input type="text" name="availability" value={this.state.availability} placeholder="Employee Availability" onChange={this.handleInput} /> <br/>
           <button onClick={this.props.closeEditModal}>Submit</button>
         </form>
       </div>
