@@ -50,12 +50,12 @@ class CreateShiftModal extends Component {
 				<button onClick={this.props.closeCreateShiftModal}>Exit</button>
 				<form onSubmit={this.props.addShift.bind(null, this.state)}>
 						New Shift: <br/>
-					<input type="text" defaultValue="" placeholder="Shift Name" onChange={this.handleInput} /> <br/>
-					<input type="date" placeholder="Start of Shift Date (YYYY-MM-DD)" onChange={this.handleInput} /> <br/>
+					<input type="text" name="name" defaultValue="" placeholder="Shift Name" onChange={this.handleInput} /> <br/>
+					<input type="date" name="start_shift" placeholder="Start of Shift Date (YYYY-MM-DD)" onChange={this.handleInput} /> <br/>
 					<input type="time" defaultValue="" placeholder="Start of Shift Time (HH:MM:SS)" onChange={this.updateStartShiftTime} /> <br/>
-					<input type="date" placeholder="End of Shift Date (YYYY-MM-DD)" onChange={this.handleInput} /> <br/>
+					<input type="date" name="end_shift" placeholder="End of Shift Date (YYYY-MM-DD)" onChange={this.handleInput} /> <br/>
 					<input type="time" defaultValue="" placeholder="End of Shift Time (HH:MM:SS)" onChange={this.updateEndShiftTime} /> <br/>
-					<input type="text" defaultValue="" placeholder="Shift Notes" onChange={this.handleInput} /> <br/>
+					<input type="text" name="notes" defaultValue="" placeholder="Shift Notes" onChange={this.handleInput} /> <br/>
 					<button type="submit" onClick={this.props.closeCreateShiftModal}>Assign Shift</button> <br/>
 					<button type="reset" value="Reset">Reset</button>
 				</form>
